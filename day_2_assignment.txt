@@ -1,0 +1,39 @@
+1.  What is computer?
+Ans. A computer is an electronic device that can store, process and retrive data.
+
+2. What is RAM?
+Ans.  RAM, which stands for Random Access Memory, is a hardware device generally located on the motherboard of a computer and acts as an internal memory of the CPU.
+
+3.  Where in data store in a computer?
+Ans.  The computer's hard disc stores the saved filess. The hard drive is a data storage system that uses a ra[idly spinning disc coated with magnetic matr]erial to stre and receive digital data.
+
+4.  What is that input device used to type text  and numbers on a document in the computer system?
+Ans.  An input device allows information to be entered into the computer system, either from the user or another computer. These are known as input devices or power supply devices (input)—for example, a keyboard, mouse, or microphone.
+
+5.  What are the output devices?
+Ans.  An output device is any hardware device used to send data from a computer to another device or user.
+     1. 3D Printer
+     2. Braille embosser
+     3. Braille reader
+     4. COM (Computer Output Microfilm)
+     5. Flat-panel
+     6. GPS
+     7. Headphones
+     8. Monitor
+     9. Plotter
+     10. Printer
+     11. Projector
+     12. Sound card
+     13. Speakers
+     14. SGD (Speech-generating device)
+     15. TV
+     16. Video card
+
+6.  Which is the input device that allows a user to move       the cursor or pointer on the screen?
+Ans.  Mouse
+
+7.  Which language is directly understand by the computer without a translation program?
+Ans.  Binary language
+
+8.  What are input devices?
+Ans.  Keyboard, Mouse, Microphone, Camera and Webcam, Scanner, barcode, Joystick, stylis pen, Graphic tablet.

@@ -1,0 +1,40 @@
+1.  What is Git?
+Ans.  Git is a distributed version control system, which means that a local clone of the project is a complete version control repository. These fully functional local repositories make it easy to work offline or remotely.
+
+2.  What do you understand by the term 'version control       system'?
+Ans.  Version control systems are a category of software tools that helps in recording changes made to files by keeping a track of modifications done in the code.
+
+3.  What is GitHub?
+Ans.  GitHub is a Git repository hosting service. GitHub also facilitates with many of its features, such as access control and collaboration. It provides a Web-based graphical interface.
+
+4.  Mention some popular Git hosting services?
+Ans.  Bitbucket, GitHub, GitLab, Perforce, Beanstalk, Amazone AWS CodeCommit, Codebase, Microsoft Azure DevOps, SourceForge, Gerrit.
+
+5.  Different types of version control system?
+Ans.  (1)Local Version System
+         (2)Centralized Version Control System
+         (3)Distributed Version Control System
+
+6.  What benefits come with using GIT?
+Ans.  Performance, Security, Flexibility, wide acceptance, Quality open source project.
+
+7.  What is a Git repository?
+Ans.  A Git repository tracks and saves the history of all changes made to the files in a Git project. It saves this data in a directory called .git, also known as the repository folder.
+
+8.  How can you initialized a repository in Git?
+Ans.  To initialize a Git repository in an existing directory, start by using the Git Bash terminal window to go to your project's directory:
+
+cd [directory path]
+
+Where:
+
+[directory path]: The path to your project directory.
+If you are using Windows 10, the directory path might look like:
+
+cd C:/Users/aleksandarko/git_example
+
+Use Git Bash to go to your project directory
+Once you navigate to the project directory, initialize a Git repository by using:
+
+git init
+
