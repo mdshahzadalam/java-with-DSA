@@ -1,0 +1,48 @@
+1.  How to check if git is available on your system?
+Ans.  git --version
+
+2.  How to initialize a new Git repository?
+Ans.  To create (initialize) a loca Git repository for a project, go to the root of your project and run this command:
+
+git init
+
+Now you can start tracking and commiting files:
+
+Run git add . to stage your files.
+Run git commit -m 'Describe your changes' to add a descriptive message about your file changes.
+Run git push origin master to push your changes to your remote repository.
+
+3.  How to tell git about your name and email?
+Ans. git config --global user.name "My Name"
+
+git config --global user.email "myemail@example.com"
+
+4.  How to add a file to the staging area?
+Ans.  # Add a single file
+$ git add <file>
+
+# It can be a path also
+$ git add path/to/a/<file>
+
+5.  How to remove a file from the staging area?
+Ans.  $ git rm <file-name>
+$ git commit -m "Remove old file"
+
+6.  How to make a commit?
+Ans.  git commit -m "I added text to the README file"
+
+7.  How to send your changes to a remote repository?
+Ans.  git clone https://myusername@something.com/repo.git
+git checkout master
+git add .
+
+git commit -m "my changes"
+
+8.  What is the different between clone and pull?
+Ans.  
+git init
+git remote add origin git://github.com/cmcculloh/repo.git
+git fetch --all
+git pull origin master
+
+git clone git://github.com/cmcculloh/repo.git
