@@ -1,0 +1,76 @@
+1Q.
+Why do we need static keyword on Java Explain with an example?
+Ans.
+The static keyword in Java is mainly used for memory management. The static keyword in Java is used to share the same variable or method of a given class.
+
+2Q.
+What is class loading and how does the Java program actually executes?
+Ans.
+Java code is compiled into the class file by javac compiler and JVM executes Java program, by executing byte codes written in the class file. ClassLoader is responsible for loading class files from file system, network or any other source.
+
+3Q.
+Can we mark a local variable as static?
+Ans.
+In Java, a static variable is a class variable (for whole class). So if we have static local variable (a variable with scope limited to function), it violates the purpose of static.
+
+4Q.
+Why is the static block executed before the main method in java?
+Ans.
+It is because the object is not required to call a static method. If it were a non-static method, JVM creates an object first then call main() method that will lead the problem of extra memory allocation.
+
+      Java static block
+Is used to initialize the static data member.
+It is executed before the main method at the time of classloading.
+
+5Q.
+Why is a static method also called a class method?
+Ans.
+A static method belongs to the class itself so a static method is also called class method. And since a static method doesn’t belong to any instances of the class, it cannot access non-static methods or non-static variables of the class.
+
+6Q.
+What is the use of static blocks in java?
+Ans.
+There are many uses of static blocks in java, however, let us discuss the primary uses of static blocks in java:
+
+There are some logic or code that are needed to be executed at the very beginning or even before the execution main () method. We can use a static initialization block to store them so that they can be executed during the class loading.
+A static initialization block is mostly used for changing the default value of static variables.
+
+7Q.
+Different between static and instance variables?
+Ans.
+static Variable :-
+When a variable is declared as static, then a single copy of the variable is created and shared among all objects at the class level. Static variables are, essentially, global variables. All instances of the class share the same static variable.
+class Test {
+  
+    // static variable
+    static int a = m1();
+  
+    // static block
+    static
+    {
+        System.out.println("Inside static block");
+    }
+  
+    // static method
+    static int m1()
+    {
+        System.out.println("from m1");
+        return 20;
+    }
+  
+    // static method(main !!)
+    public static void main(String[] args)
+    {
+        System.out.println("Value of a : " + a);
+        System.out.println("from main");
+    }
+}
+
+Instance Variable :-
+The variables that are declared inside the class but outside the scope of any method are called instance variables in Java.
+
+The instance variable is initialized at the time of the class loading or when an object of the class is created.
+
+An instance variable can be declared using different access modifiers available in Java like default, private, public, and protected.
+
+Instance variables of different types have default values that are specified in the next point.
