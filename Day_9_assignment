@@ -1,1 +1,618 @@
+Q1.  Write a program to print alphabets A B C D E F G H I J K L 
 
+class Pattern
+{
+   public static void main(String args[])
+   {
+       int i,j;
+       int n=10;
+       for(i=1;i<=n;i++)
+       {
+        for(j=1;j<=n;j++)
+        {
+            if(i<=n && j==1 || j==n && i<=n || i==1 && j<=n || i==5 && j<=n)
+            {
+                System.out.print("*");
+            }
+            else{
+
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
+       }
+       System.out.println("  ");
+       System.out.println();
+
+       for(i=1;i<=n;i++)
+       {
+        for(j=1;j<=n;j++)
+        {
+            if(i<=n && j==1 || j==n && i<=n || i==1 && j<=n || i==5 && j<=n || i==n && j<=n)
+            {
+                System.out.print("*");
+            }
+            else{
+
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
+       }
+       System.out.println("  ");
+       System.out.println();
+
+       for(i=1;i<=n;i++)
+       {
+        for(j=1;j<=n;j++)
+        {
+            if(i<=n && j==1 || i==1 && j<=n || i==n && j<=n)
+            {
+                System.out.print("*");
+            }
+            else{
+
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
+       }
+       System.out.println("  ");
+       System.out.println();
+
+       for(i=1;i<=n;i++)
+       {
+        for(j=1;j<=n;j++)
+        {
+            if(i<=n && j==1 || i==1 && j<=n || i==n && j<=n || j==n && i<=n)
+            {
+                System.out.print("*");
+            }
+            else{
+
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
+       }
+       System.out.println("  ");
+       System.out.println();
+
+       for(i=1;i<=n;i++)
+       {
+        for(j=1;j<=n;j++)
+        {
+            if(i<=n && j==1 || i==1 && j<=n || i==n && j<=n || i==n/2 && j<=n)
+            {
+                System.out.print("*");
+            }
+            else{
+
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
+       }
+       System.out.println("  ");
+       System.out.println();
+
+       for(i=1;i<=n;i++)
+       {
+        for(j=1;j<=n;j++)
+        {
+            if(i<=n && j==1 || i==1 && j<=n || i==n/2 && j<=n)
+            {
+                System.out.print("*");
+            }
+            else{
+
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
+       }
+       System.out.println("  ");
+       System.out.println();
+
+       for(i=1;i<=n;i++)
+       {
+        for(j=1;j<=n;j++)
+        {
+            if(i<=n && j==1 || i==1 && j<=n || i==n && j<=n || i>=n/2 && j==n || i==n/2 && j>=n/2)
+            {
+                System.out.print("*");
+            }
+            else{
+
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
+       }
+       System.out.println("  ");
+       System.out.println();
+
+       for(i=1;i<=n;i++)
+       {
+        for(j=1;j<=n;j++)
+        {
+            if(i<=n && j==1 || i<=n && j==n || i==n/2 && j<=n)
+            {
+                System.out.print("*");
+            }
+            else{
+
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
+       }
+       System.out.println("  ");
+       System.out.println();
+   }
+}
+
+
+Q2.   write a program to print triangle
+
+/ triangle pattern
+
+
+public class pattern_triangle {
+    public static void main(String [] args)
+    {
+        int i,j,n=10;
+        for (i=1;i<=n;i++)
+        {
+            for(j=1;j<=n;j++)
+            {
+                if(i==n && j<=n ||  j==1 && i<=n || i>=j)
+                {
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+Q3.  special patter
+
+public class special_patter {
+    public static void main(String [] args)
+    {
+        int i,j,n=14;
+        for(i=1;i<=n;i++)
+        {
+            for(j=1;j<=n;j++)
+            {
+                if(i<=n && j==1 || i==1 & j<=n || j==n && i<=n || i==n && j<=n || 
+                i==0 && j<=n/2 || j==0 && i<=n/2 || i+j<=n/2  || i==0 && j>=n/2 || j==n && i<=n/2 || j-i>=n/2)
+                {
+                    System.out.print("*");
+                }
+                else
+                {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+Q4.  print PW SKILLS
+
+public class logic_pattern {
+    public static void main(String []args)
+    {
+        int i,j,n=10;
+        for(i=1;i<=n;i++)
+        {
+            for(j=1;j<=n;j++)
+            {
+                if(i<=n && j==1 || i==1 && j<=n || i==n/2 && j<=n || i<=n/2 && j==n)
+                {
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        // System.out.print("  ");  
+
+           
+         for(i=1;i<=n;i++)
+        {
+            for(j=1;j<=n;j++)
+            {
+                if(i<=n && j==1 || i<=n && j==n  || j<=n/2 && i+j==n || j>=n/2 && i-j==0)
+                {
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+
+
+        System.out.print("   ");  
+
+           System.out.println();
+         for(i=1;i<=n;i++)
+        {
+            for(j=1;j<=n;j++)
+            {
+                if(i==1 && j<=n || i<=n/2 && j==1 || i==n/2 && j<=n || i>=n/2 && j==n || i==n && j<=n)
+                {
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+
+        System.out.print("   ");  
+
+        System.out.println();
+      for(i=1;i<=n;i++)
+     {
+         for(j=1;j<=n;j++)
+         {
+             if(i<=n && j==1  || i+j==7 || i-j==3)
+             {
+                 System.out.print("*");
+             }
+             else{
+                 System.out.print(" ");
+             }
+         }
+         System.out.println();
+     }
+
+     System.out.print("   ");  
+
+        System.out.println();
+      for(i=1;i<=n;i++)
+     {
+         for(j=1;j<=n;j++)
+         {
+             if(i<=n && j==n/2)
+             {
+                 System.out.print("*");
+             }
+             else{
+                 System.out.print(" ");
+             }
+         }
+         System.out.println();
+     }
+
+     System.out.print("   ");  
+
+        System.out.println();
+      for(i=1;i<=n;i++)
+     {
+         for(j=1;j<=n;j++)
+         {
+             if(i<=n && j==1 || i==n && j<=n)
+             {
+                 System.out.print("*");
+             }
+             else{
+                 System.out.print(" ");
+             }
+         }
+         System.out.println();
+     }
+
+     System.out.print("   ");  
+
+     System.out.println();
+   for(i=1;i<=n;i++)
+  {
+      for(j=1;j<=n;j++)
+      {
+          if(i<=n && j==1 || i==n && j<=n)
+          {
+              System.out.print("*");
+          }
+          else{
+              System.out.print(" ");
+          }
+      }
+      System.out.println();
+  }
+
+  System.out.print("   ");  
+
+  System.out.println();
+for(i=1;i<=n;i++)
+{
+   for(j=1;j<=n;j++)
+   {
+       if(i==1 && j<=n || i<=n/2 && j==1 || i==n/2 && j<=n || i>=n/2 && j==n || i==n && j<=n)
+       {
+           System.out.print("*");
+       }
+       else{
+           System.out.print(" ");
+       }
+   }
+   System.out.println();
+}
+
+    }
+}
+
+Q5.  FULL NAME
+
+
+
+    
+class Name_pattern
+{
+    public static void main(String [] args)
+    {
+        int i,j,n=10;
+
+        //M
+        for(i=1;i<=n;i++)
+        {
+            for(j=1;j<=n;j++)
+            {
+                if(i<=n && j==1 || i<=n && j==n || i<=n/2 && i==j || i<=n/2 && i+j==n)
+                {
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        // System.out.print("  ");  
+
+           //D
+         for(i=1;i<=n;i++)
+        {
+            for(j=1;j<=n;j++)
+            {
+                if(i<=n && j==1 || i==1 && j<=n || i==n && j<=n || i<=n && j==n)
+                {
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+
+
+        System.out.print("   ");  
+//S
+           System.out.println();
+         for(i=1;i<=n;i++)
+        {
+            for(j=1;j<=n;j++)
+            {
+                if(i==1 && j<=n || i==n/2 && j==n || i==n && j<=n || i<=n/2 && j==1 || i<=n/2 && j==n)
+                {
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+
+        System.out.print("   ");  
+//H
+        System.out.println();
+      for(i=1;i<=n;i++)
+     {
+         for(j=1;j<=n;j++)
+         {
+             if(i<=n && j==1 || i<=n && j==n || i==n/2 && j<=n)
+             {
+                 System.out.print("*");
+             }
+             else{
+                 System.out.print(" ");
+             }
+         }
+         System.out.println();
+     }
+
+     System.out.print("   ");  
+
+        System.out.println();
+        //A
+      for(i=1;i<=n;i++)
+     {
+         for(j=1;j<=n;j++)
+         {
+             if(i<=n && j==1 || i==1 && j<=n || i<=n && j==n || i==n/2 && j<=n)
+             {
+                 System.out.print("*");
+             }
+             else{
+                 System.out.print(" ");
+             }
+         }
+         System.out.println();
+     }
+
+     System.out.print("   ");  
+
+        System.out.println();
+        //H
+      for(i=1;i<=n;i++)
+     {
+         for(j=1;j<=n;j++)
+         {
+             if(i<=n && j==1 || i<=n && j==n || i==n/2 && j<=n)
+             {
+                 System.out.print("*");
+             }
+             else{
+                 System.out.print(" ");
+             }
+         }
+         System.out.println();
+     }
+
+     System.out.print("   ");  
+
+     System.out.println();
+     //Z
+   for(i=1;i<=n;i++)
+  {
+      for(j=1;j<=n;j++)
+      {
+          if(i==1 && j<=n || i==n && j<=n || i+j ==10)
+          {
+              System.out.print("*");
+          }
+          else{
+              System.out.print(" ");
+          }
+      }
+      System.out.println();
+  }
+
+  System.out.print("   ");  
+
+  System.out.println();
+
+  //A
+for(i=1;i<=n;i++)
+{
+   for(j=1;j<=n;j++)
+   {
+       if(i<=n && j==1 || i==1 && j<=n || i<=n && j==n || i==n/2 && j<=n)
+       {
+           System.out.print("*");
+       }
+       else{
+           System.out.print(" ");
+       }
+   }
+   System.out.println();
+}
+
+System.out.print("   ");  
+
+System.out.println();
+
+//D
+for(i=1;i<=n;i++)
+{
+ for(j=1;j<=n;j++)
+ {
+     if(i<=n && j==1 || i==1 && j<=n || i==n && j<=n || i<=n && j==n)
+     {
+         System.out.print("*");
+     }
+     else{
+         System.out.print(" ");
+     }
+ }
+ System.out.println();
+}
+
+System.out.print("   ");  
+
+System.out.println();
+
+//A
+for(i=1;i<=n;i++)
+{
+ for(j=1;j<=n;j++)
+ {
+     if(i<=n && j==1 || i==1 && j<=n || i<=n && j==n || i==n/2 && j<=n)
+     {
+         System.out.print("*");
+     }
+     else{
+         System.out.print(" ");
+     }
+ } 
+ System.out.println();
+}
+
+System.out.print("   ");  
+
+System.out.println();
+
+//L
+for(i=1;i<=n;i++)
+{
+ for(j=1;j<=n;j++)
+ {
+     if(i<=n && j==1  || i==n && j<=n)
+     {
+         System.out.print("*");
+     }
+     else{
+         System.out.print(" ");
+     }
+ }
+ System.out.println();
+}
+
+System.out.print("   ");  
+
+System.out.println();
+
+//A
+for(i=1;i<=n;i++)
+{
+ for(j=1;j<=n;j++)
+ {
+     if(i<=n && j==1 || i==1 && j<=n || i<=n && j==n || i==n/2 && j<=n)
+     {
+         System.out.print("*");
+     }
+     else{
+         System.out.print(" ");
+     }
+ }
+ System.out.println();
+}
+
+System.out.print("   ");  
+
+System.out.println();
+
+//M
+for(i=1;i<=n;i++)
+{
+ for(j=1;j<=n;j++)
+ {
+     if(i<=n && j==1 || i<=n && j==n || i<=n/2 && i==j || i<=n/2 && i+j==n)
+     {
+         System.out.print("*");
+     }
+     else{
+         System.out.print(" ");
+     }
+ }
+ System.out.println();
+}
+
+    }
+}
