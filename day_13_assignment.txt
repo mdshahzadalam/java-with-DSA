@@ -1,0 +1,125 @@
+Q1.
+What is the default value of Array for different data types?
+Ans.
+Below are the default assigned values. 
+
+S. No.	Datatype	Default Value
+1	boolean	false
+2	int	0
+3	double	0.0
+4	String	null
+5	User-Defined Type	null
+
+Q2.
+Can you pass the negative number in Array size?
+Ans.
+No, you cannot use a negative integer as size, the size of an array represents the number of elements in it, –ve number of elements in an array makes no sense.
+
+Q3.
+Where does Array stored in JVM memory?
+Ans.
+JVM memory locations
+JVM has five memory locations namely −
+
+Heap − Runtime storage allocation for objects (reference types).
+Stack − Storage for local variables and partial results. A stack contains frames and allocates one for each thread. Once a thread gets completed, this frame also gets destroyed. It also plays roles in method invocation and returns.
+PC Registers − Program Counter Registers contains the address of an instruction that JVM is currently executing.
+Execution Engine − It has a virtual processor, interpreter to interpret bytecode instructions one by one and a JIT, just in time compiler.
+Native method stacks − It contains all the native methods used by the application.
+
+Q4.
+What are the disadvantages of Array?
+Ans.
+The size of the array should be known in advance.
+
+The array is a static data structure with a fixed size so, the size of the array cannot be modified further and hence no modification can be done during runtime.
+
+Insertion and deletion operations are costly in arrays as elements are stored in contiguous memory.
+
+If the size of the declared array is more than the required size then, it can lead to memory wastage. 
+
+Resizing an array can be time-consuming, especially if it needs to be done frequently. This can be especially problematic for large arrays.
+
+No built-in functionality.
+
+Q5.
+What is an Anonymous Array in Java?Give an example?
+Ans.
+An array in Java without any name is known as an anonymous array. 
+
+Examples:
+
+// anonymous int array 
+new int[] { 1, 2, 3, 4};  
+
+// anonymous char array 
+new char[] {'x', 'y', 'z'}; 
+
+// anonymous String array
+new String[] {"Geeks", "for", "Geeks"}; 
+
+// anonymous multidimensional array
+new int[][] { {10, 20}, {30, 40, 50} };
+Implementation:
+Java
+// Java program to illustrate the
+// concept of anonymous array
+ 
+class Test {
+    public static void main(String[] args)
+    {
+          // anonymous array
+          sum(new int[]{ 1, 2, 3 });
+    }
+   
+    public static void sum(int[] a)
+    {
+        int total = 0;
+ 
+        // using for-each loop
+        for (int i : a)
+            total = total + i;
+         
+        System.out.println("The sum is: " + total);
+    }
+}
+Output
+The sum is: 6
+
+Q6. 
+What are the different ways to traverse an Array in Java?
+Ans.
+Using the for loop − Instead on printing element by element, you can iterate the index using for loop starting from 0 to length of the array (ArrayName.length) and access elements at each index.
+
+Q7.
+What is the different between length and length() method give an example?
+Ans.
+1. The length variable is applicable to an array but not for string objects whereas the length() method is applicable for string objects but not for arrays.
+2. Examples:
+
+// length can be used for int[], double[], String[] 
+// to know the length of the arrays.
+
+// length() can be used for String, StringBuilder, etc 
+// String class related Objects to know the length of the String
+
+3. To directly access a field member of an array we can use .length; whereas .length() invokes a method to access a field member.
+
+public class Test {
+    public static void main(String[] args)
+    {
+        // Here array is the array name of int type
+        int[] array = new int[4];
+        System.out.println("The size of the array is "
+                           + array.length);
+ 
+        // Here str is a string object
+        String str = "GeeksforGeeks";
+        System.out.println("The size of the String is "
+                           + str.length());
+    }
+}
+
+Output
+The size of the array is 4
+The size of the String is 13
