@@ -1,0 +1,46 @@
+Q1.  
+How to create am object in Java?
+Ans.
+
+class Class{
+    int a=20;
+    void function()
+    {
+        System.out.println("The value of a is="+a);
+    }
+}
+
+
+class Question
+{
+    public static void main(String [] args)
+    {
+        Class c = new Class();
+        c.function();
+    }
+}
+Q2. What is the use of a new keyword in java?
+Ans.  new is a Java keyword. It creates a Java object and allocates memory for it on the heap. new is also used for array creation, as arrays are also objects.
+
+Q2. What is the use of a new keyword in java?
+Ans.  new is a Java keyword. It creates a Java object and allocates memory for it on the heap. new is also used for array creation, as arrays are also objects.
+
+Q3. What are the differnt types of variables in java?
+Ans.  There are three types of variables in Java
+          (1)Local
+          (2)Instance 
+          (3)Static
+
+Q4.  What is the different between instance variable and local variable?
+Ans.  Instance Variable :- These variable are declared within a class but outside a method, constructor, or block and always get a default value.
+        These variables are usually created when we create an object and are destroyed when the object is destroyed.
+
+Local Variable :- These variables are declared within a method but do not any default value.
+         They are usually created when we enter a method or constructor and are destroyed after exiting the block or when the call returns from the method.
+
+Q5.  In which area memory is allocated for instance variable and local variable?
+Ans.  Heap is a memory place where the objects and its instance variable are stored.
+         Stack is a memory place where the objects and its instance variable are stored.
+
+Q6.  What is method overloading?
+Ans. Method overloading in java is a feature that allows a class to have more than one method with the same name, but with different parameters.
