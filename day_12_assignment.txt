@@ -1,0 +1,47 @@
+Q1.  What do you mean by an Array?
+Ans. An array is a data structure that contains a group of elements. Typically these elements are all of the same data type, such as an integer or string. Arrays are commonly used in computer programs to organize data so that a related set of values can be easily sorted or searched.
+
+Q2.  How to create an Array?
+Ans. In Java, you can create an array just like an object using the new keyword. The syntax of creating an array in Java using new keyword −
+
+type[] reference = new type[10];
+Where,
+
+type is the data type of the elements of the array.
+reference is the reference that holds the array.
+
+Q3.  Can we change the size of an array at run time?
+Ans. Thus the size of the array is determined at the time of its creation or, initialization once it is done you cannot change the size of the array. Still if you try to assign value to the element of the array beyond its size a run time exception will be generated.
+
+Q4.  Can you declare an array without assigning the size of an array?
+Ans.  No we cannot declare an array without assigning size. If we declare an array without size, it will throw compile time error Example: marks = new int []; //COMPILER ERROR
+
+Q5.  What is the default value of Array?
+Ans.  Integer − 0
+Byte − 0
+Float − 0.0
+Boolean − false
+String/Object − null
+
+Q6.  What is a 1D array with an example?
+Ans.  An array is a collection of elements of one specific type in a horizontal fashion. The array in contention here is that of the one-dimensional array in Java programming.
+
+       int [] a = new int [3];
+
+Q7.  Write a program on 2D array?
+Ans.  
+class TwodimensionalArray
+{
+	public static void main(String args[])
+	{    
+	int[][] a={{10,20},{30,40},{50,60}}; 
+	System.out.println("Two dimensional array elements are");    
+	for (int i = 0; i < 3; i++) 
+	{
+            for (int j = 0; j < 2; j++) 
+	    {
+                System.out.println(a[i][j]);
+            }
+	}
+	}
+}
