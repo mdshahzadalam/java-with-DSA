@@ -1,0 +1,63 @@
+1Q.
+What is Mutable string in java explain with an example?
+Ans.
+ Mutable string, we can change the contents of an existing object, which does not create a new object.
+ public class mutabe_buffer {
+    public static void main(String args[]){
+        StringBuffer sBuffer1=new StringBuffer("Welcome");
+        System.out.println("Original String is : " + sBuffer1);
+        //using append method
+        sBuffer1.append(" To Edubca");
+        System.out.println("Modified String after append is : " + sBuffer1);
+        }
+    
+}
+
+2Q.
+WAP to reverse a string
+input : "PWSKILLS"
+output : "SLLIKSWP"
+public class reverse {
+    public static void main(String []args)
+    {
+        StringBuffer s=new StringBuffer("PWSKILLS");
+        s.reverse();
+        System.out.println(s);
+    }
+    
+}
+
+
+3Q.
+WAP to reverse a sentence while preserving the position
+input : Think Twice
+output : knihT eciwT
+
+public class reverse {
+    public static void main(String []args)
+    {
+        StringBuffer s=new StringBuffer("Think Twice");
+        s.reverse();
+        System.out.println(s);
+    }
+    
+}
+
+4Q.
+WAP to sort a String Alphabetically.
+
+
+import java.util.Arrays;
+ 
+class Alpha {
+ 
+    static void sortString(String str) {
+        char []arr = str.toCharArray();
+        Arrays.sort(arr);
+        System.out.print(String.valueOf(arr));
+    }
+    public static void main(String[] args) {
+        String s = "Shahzad";
+        sortString(s);
+    }
+}
