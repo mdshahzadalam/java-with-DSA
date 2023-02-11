@@ -1,0 +1,144 @@
+1Q.
+Write a simple String program to take input from user?
+
+
+import java.util.*;
+public class q15_1 {
+    public static void main(String [] args)
+    {
+        Scanner obj = new Scanner(System.in);
+        String s;
+        System.out.println("Enter your name here");
+        s=obj.nextLine();
+
+    }
+    
+}
+
+
+2Q.
+How do you concatenate two string in java?Give an example?
+Ans.
+The Java String concat() method concatenates one string to the end of another string.
+class Concatenate {
+  
+    public static void main(String args[])
+    {
+        String s = "Hello ";
+        
+        s = s.concat("World");
+ 
+        System.out.println(s);
+    }
+}
+
+3Q.
+how do you find the length of a string in java explain with an example?
+Ans.
+public class length {
+    public static void main(String []args)
+    {
+        String s="shahzad";
+        System.out.println("Length of the string - "+s.length());
+    }
+    
+}
+
+
+4Q.
+How do you compare two Strings in java? give an example?
+Ans.
+public class compare_string {
+    public static void main(String []args)
+    {
+        String s1="Shahzad";
+        String s2="shahzad";
+        System.out.println("Comparision of two string "+s1.equals(s2));
+    }
+
+}
+
+
+5Q.
+Write a program to find the length of the string "refrigerator"?
+Ans.
+public class length {
+    public static void main(String []args)
+    {
+        String s="refrigretor";
+        System.out.println("Length of the string - "+s.length());
+    }
+    
+}
+
+6Q.
+Write a program to check if the letter 'e' is present in the word "Umbrella"
+Ans.
+public class check_alpha {
+    public static void main(String []args)
+    {
+        String s="Umbrella";
+        int flag=0;
+        for(int i=0;i<s.length();i++)
+        {
+            if(s.charAt(i)=='e')
+        {
+            flag=1;
+           
+            break;
+        }
+        }
+        if(flag==1)
+        {
+            System.out.println("'e' is present in the word ");
+        }
+        else{
+            System.out.println("'e' is not present in the word  ");
+        }
+    }
+    
+}
+
+
+7Q.
+Write a program to delete all consonants from the string "hello, have a good day"?
+Ans.
+public class con_delete {
+    public static void main(String []args)
+    {
+        String s="Hello, have a good day";
+        int i,j=0;
+        for(i=0;i<s.length();i++)
+        {
+            char ch[]=new char[20];
+
+            for(i=0;i<s.length();i++)
+        
+            {
+        
+            if(s.charAt(i)=='a'|| s.charAt(i)=='A'||s.charAt(i)=='e'|| s.charAt(i)=='E'||s.charAt(i)=='i'|| s.charAt(i)=='I'||s.charAt(i)=='o'|| s.charAt(i)=='O'||s.charAt(i)=='U'|| s.charAt(i)=='u')
+        
+            {
+            ch[j++]=s.charAt(i);
+        
+            
+            }
+        
+                else
+            
+                {
+        
+                continue;
+        
+                }
+        
+            }
+            for(i=0;i<j;i++)
+            {
+            System.out.print(ch[i]);
+            }
+            System.out.println();
+        }
+    }
+    
+}
