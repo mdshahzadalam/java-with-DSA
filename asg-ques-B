@@ -1,0 +1,135 @@
+1Q.
+What is encapsulation in java? Why it is called data hiding?
+Ans.
+Encapsulation in Java is a process of wrapping code and data together into a single unit, for example, a capsule which is mixed of several medicines.
+     It is a way to achieve data hiding in Java because other class will not be able to access the data through the private data members.
+
+2Q.
+What are the important features of Encapsulation?
+Ans.
+Read-only or write-only fields of a class may be generated.
+ A class should be in full possession of what is contained in its fields.
+
+3Q.
+what are the getter and setter methods in java explain with an example?
+Ans.In Java, getter and setter are two conventional methods that are used for retrieving and updating value of a variable. 
+Setter :-
+public class GetterSetterExample   
+{  
+    public salary;  
+      
+    public storeSalaryDB(int salary)  
+    {  
+        // code for storing the salary in the database  
+    }  
+      
+    // main method  
+    public static void main(String argvs[])   
+    {  
+      GetterSetterExample obj = new GetterSetterExample();      
+        
+      obj.salary = -50000;  
+        
+      // storing salary in database  
+      obj.storeSalaryDB(salary);  
+  
+    }  
+}  
+
+Getter :-
+public class GetterSetterExample   
+{  
+    private salary;  
+      
+    // a setter method that assign a   
+    // value to the salary variable  
+    void setSalary(int s)  
+    {  
+        if(s < 0 )  
+        {  
+            s = -s;  
+        }  
+          
+        this.salary = s;  
+    }  
+      
+      
+    // a getter mehtod to retrieve   
+    // the salary  
+    int getSalary()  
+    {  
+        return this.salary;  
+    }  
+      
+    public storeSalaryDB(int salary)  
+    {  
+        // code for storing the salary in the database  
+         System.out.println("The ")  
+    }  
+      
+    // main method  
+    public static void main(String argvs[])   
+    {  
+        // creating an object of the class GetterSetterExample          
+        GetterSetterExample obj = new GetterSetterExample();      
+        
+      obj.setSalary(-50000);  
+        
+      int salary = obj.getSalary();  
+        
+      // storing salary in database  
+      obj.storeSalaryDB(salary);  
+  
+    }  
+}  
+
+4Q.
+What is the use of this keyword explain with an example?
+Ans.
+The this keyword refers to the current object in a method or constructor. The most common use of the this keyword is to eliminate the confusion between class attributes and parameters with the same name.
+
+5Q.
+What is the advantage of encapsulation?
+Ans.
+Encapsulation provides tons of benefits in everyday programming. Some of the exhilarating benefits are as follows −
+
+Programming is made flexible with encapsulation. It means you do not need to edit and update code every time according to new specifications.
+
+It helps you in achieving loose coupling.
+
+With encapsulation, it's simple and easy to debug an application.
+
+It is also possible to alter and make edits to your codebase without disrupting the regular functioning of your program.
+
+It enables the programmer to monitor the data accessibility of a class.
+
+6Q.
+How to achieve encapsulation in java ? Give an example.
+Ans.
+Encapsulation can be achieved by Declaring all the variables in the class as private and writing public methods in the class to set and get the values of variables.
+class Area {
+ 
+  int length;
+  int breadth;
+ 
+  // constructor to initialize values
+  Area(int length, int breadth) {
+    this.length = length;
+    this.breadth = breadth;
+  }
+ 
+  // method to calculate area
+  public void getArea() {
+    int area = length * breadth;
+    System.out.println("Area: " + area);
+  }
+}
+ 
+class Main {
+  public static void main(String[] args) {
+ 
+    Area rectangle = new Area(2, 16);
+    rectangle.getArea();
+  }
+}
+
