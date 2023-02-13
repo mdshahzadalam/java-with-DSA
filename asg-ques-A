@@ -1,0 +1,63 @@
+1Q.
+What is a constructor?
+Ans.
+a constructor is a block of codes similar to the method. It is called when an instance of the class is created. At the time of calling constructor, memory for the object is allocated in the memory.
+
+
+2Q.
+What is constructor chaining?
+Ans.
+constructor chaining is a sequence of invoking constructors upon initializing an object. It is used when we want to invoke a number of constructors, one after another by using only an instance.
+
+3Q.
+Can we call a subclass constructor from a superclass constructor?
+Ans.
+You cannot call a sub-class constructor from a super-class constructor. 
+
+4Q.
+What happens if you keep a return type for a constructor?
+Ans.
+ If we keep return type for a constructor it will be treated as a normal method. Note: Compiler gives a warning message that method has a constructor name.
+
+5Q.
+Waht is No-arg constructor?
+Ans.
+The no-arg constructor you are referring to is a explicitly defined substitute to the "default constructor".
+
+6Q.
+How is a No-argument constructor different from the default constructor?
+Ans.
+The default constructor is a no-args constructor that the Java compiler inserts on your behalf; it contains a default call to super(); (not supper()) which is the default behavior. If you implement any constructor then you no longer receive a default constructor.
+
+7Q.
+When do we need constructor overloading?
+Ans.
+The constructor overloading can be defined as the concept of having more than one constructor with different parameters so that every constructor can perform a different task.
+           we need to understand the purpose of constructor overloading. Sometimes, we need to use multiple constructors to initialize the different values of the class.
+
+8Q.
+What is default constructor explain with an example?
+Ans.
+A default constructor is a constructor created by the compiler if we do not define any constructor(s) for a class. Here is an example:
+
+public class Student {
+  String firstName;
+  String lastName;
+  int age;
+  
+  public static void main(String args[]) {
+      Student myStudent = new Student();
+      
+      myStudent.firstName = "Ihechikara";
+      myStudent.lastName = "Abba";
+      myStudent.age = 100;
+      
+      System.out.println(myStudent.age);
+      //100
+      
+      System.out.println(myStudent.firstName);
+      //Ihechikara
+  }
+}
+
+
