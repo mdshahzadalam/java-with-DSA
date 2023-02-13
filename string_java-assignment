@@ -1,0 +1,352 @@
+//  1Q.  WAP to remove duplicate from a string. Take any String example with duplicate character.
+
+
+
+import java.util.*;
+class Remove
+{
+    static String removeDuplicate(char str[], int n)
+    {
+        
+        int index = 0;
+ 
+        for (int i = 0; i < n; i++)
+        {
+
+            int j;
+            for (j = 0; j < i; j++)
+            {
+                if (str[i] == str[j])
+                {
+                    break;
+                }
+            }
+ 
+            if (j == i)
+            {
+                str[index++] = str[i];
+            }
+        }
+        return String.valueOf(Arrays.copyOf(str, index));
+    }
+    public static void main(String[] args)
+    {
+        char str[] = "md shahzad alam".toCharArray();
+        int n = str.length;
+        System.out.println(removeDuplicate(str, n));
+    }
+}
+
+
+
+
+
+//    2Q.   WAP to print duplicates characters from the string.
+
+
+import java.util.*;
+
+public class duplicate_char {
+
+
+    public static void main(String []args)
+    {
+        String s="My name is Md Shahzad Alam";
+        int count;
+        char string[]=s.toCharArray();
+        for(int i=0;i<s.length();i++)
+        {
+            count=1;
+            for(int j=i+1;j<s.length();j++)
+            {
+                if(string[i]==string[j] && string[i]!='0')
+                {
+                    count++;
+                    string[j]='0';
+
+                }
+
+            }
+            if(count>1 && string[i]!='0')
+            {
+                System.out.println(string[i]);
+            }
+        }
+
+    }
+    
+}
+
+
+
+//        3Q.      WAP to check if "2552" is palindrromic or not.
+
+
+public class palindrome {
+    public static void main(String []args)
+    {
+        int r,sum=0,temp;
+        int n=2552;
+        temp=n;
+        while(n>0)
+        {
+            r=n%10;
+            sum= sum*10 + r;
+            n=n/10;
+        }
+        if(temp==sum)
+        {
+            System.out.println("Given number is palindrome.");
+        }
+        else{
+            System.out.println("given number is not palindrome.");
+        }
+    }
+    
+}
+
+
+
+//       4Q.WAP to count the number of consonants vowels special characters in a string.
+
+
+
+
+import javax.lang.model.util.ElementScanner14;
+
+public class alpha_count {
+    public static void main(String []args)
+    {
+        String s="eiodrg";
+        int vowels=0, consonants=0, special=0, digit=0;
+        s=s.toLowerCase();
+        for(int i=0;i<s.length();i++)
+        {
+            char ch=s.charAt(i);
+            if(ch=='a' || ch=='e' || ch=='i' || ch=='0' || ch=='u')
+            {
+                ++vowels;
+            }
+            else if(ch>='a' && ch<='z')
+            {
+                ++consonants;
+            }
+            else if(ch>='0' && ch<='9')
+            {
+                ++digit;
+            }
+            else
+            {
+                ++special;
+            }
+
+        }
+        System.out.println("vowels-"+(vowels+1)+"  consonats-"+(consonants-1)+"  Special keywords-"+special+"  digits-"+digit);
+    }
+    
+}
+
+
+
+
+//     5Q.        WAP to implement anagram checking least inbuilt methods being used.
+
+
+
+
+import java.util.Scanner;
+
+
+import java.util.*;
+public class anagram {
+
+    public static boolean anagram(String s1, String s2)
+    {
+
+        s1=s1.replaceAll("\\s", "");
+        s2=s2.replaceAll("\\s", "");
+
+        if(s1.length() != s2.length())
+        {
+            return false;
+        }
+        else
+        {
+
+            char arr1[]=s1.toLowerCase().toCharArray();
+            char arr2[]=s2.toLowerCase().toCharArray();
+
+            Arrays.sort(arr1);
+            Arrays.sort(arr2);
+
+            return (Arrays.equals(arr1, arr2));
+
+        }
+    }
+    public static void main(String []args)
+    {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter the first string ");
+        String s1=obj.nextLine();
+
+        System.out.println("Enter the second string ");
+        String s2=obj.nextLine();
+        if(anagram(s1, s2))
+        {
+            System.out.println(s1+ " and "+ s2+" are anagrams");
+        }
+        else
+        {
+            System.out.println(s1+ " and "+ s2+" are not anagrams");
+        }
+        obj.close();
+
+
+    }
+    
+}
+
+
+
+
+//       6Q. wap to implement pangram checking with least inbuilt methods being used.
+
+
+
+
+import java.util.*;
+import java.io.*;
+import javax.lang.model.util.ElementScanner14;
+
+public class pangram {
+
+    public static boolean checkPangram(String str)
+    {
+        boolean [] mark = new boolean[26];
+
+        int index =0;
+
+        for(int i=0;i<str.length();i++)
+        {
+            if('A' <= str.charAt(i) && str.charAt(i)<='Z')
+            {
+                index=str.charAt(i) - 'A';
+            }
+            else if('a' <=str.charAt(i) && str.charAt(i) <='z')
+            {
+                index=str.charAt(i) - 'a';
+            }
+            else 
+            {
+                continue;
+            }
+            mark[index] = true;
+
+        }
+        for (int i = 0; i <= 25; i++)
+        if (mark[i] == false)
+            return (false);
+
+    return (true);
+
+    }
+    public static void main(String [] args)
+    {
+        String str="The quick brown fox jumps over the lazy dog";
+
+        if(checkPangram(str) == true)
+        {
+            System.out.println(str + "\nis a pangram.");
+        }
+        else
+        {
+            System.out.println(str + "\nis not a pangram.");
+    
+        }
+    }
+}
+
+
+
+
+//             7Q.wap to find if string contains all unique characters.
+
+
+
+
+
+import java.util.*;
+public class unique_char {
+
+    public static boolean unique(String str)
+    {
+        for(int i=0;i<str.length();i++)
+        {
+            for(int j=0;j<str.length();j++)
+            {
+                if(str.charAt(i) == str.charAt(j))
+                {
+                    return false;
+
+                }
+            }
+        }
+        return true;
+    }
+    public static void main(String [] args)
+    {
+        unique_char obj = new unique_char();
+        String str="abcd";
+        if(obj.unique(str))
+        {
+            System.out.println("The String " + str + " has all unique characters");
+        }
+        else
+        {
+            System.out.println("The String " + str + " has duplicate characters");
+        }
+
+    }
+}
+
+
+
+
+//                8Q.wap to find the maximum occuring character in a string.
+
+
+
+public class occuring_char {
+
+    static final int ASCII_SIZE = 256;
+    static char MaxOccurringChar(String str)
+    {
+        
+        int count[] = new int[ASCII_SIZE];
+ 
+        int len = str.length();
+        for (int i = 0; i < len; i++)
+            count[str.charAt(i)]++;
+ 
+        int max = -1; 
+        char result = ' '; 
+ 
+        
+        for (int i = 0; i < len; i++) {
+            if (max < count[str.charAt(i)]) {
+                max = count[str.charAt(i)];
+                result = str.charAt(i);
+            }
+        }
+ 
+        return result;
+    }
+ 
+    public static void main(String []args)
+    {
+        String str = "md shahzad alam";
+        System.out.println("Max occurring character is "
+                           + MaxOccurringChar(str));
+        
+    }
+}
