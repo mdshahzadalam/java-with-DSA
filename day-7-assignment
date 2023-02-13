@@ -1,0 +1,75 @@
+1Q.
+What is statically typed and Dynamically typed programming language?
+Ans.
+Statically Typed Languages
+In statically typed programming languages, type checking occurs at compile time.
+
+Dynamically Typed Languages
+Conversely, in dynamically typed languages, type checking takes place at runtime or execution time. 
+
+2Q.
+What is the variable in java?
+Ans.
+A variable is a container which holds the value while the Java program is executed. A variable is assigned with a data type.
+There are three types of variables in Java:
+
+local variable
+instance variable
+static variable
+
+3Q.
+How to assign a value to variable?
+Ans.
+int k=20;
+
+4Q.
+What are the Primitive data types in java?
+Ans.
+Primitive data types in Java are predefined by the Java language and named as the reserved keywords. A primitive data type does not share a state with other primitive values. Java programming language supports the following eight primitive data types.
+
+Boolean data type
+byte data type
+int data type
+long data type
+float data type
+double data type
+char data type
+short data type
+
+5Q.
+What are the identifiers in java?
+Ans.
+Identifiers in Java are symbolic names used for identification. They can be a class name, variable name, method name, package name, constant name, and more.
+public class HelloJava {  
+    public static void main(String[] args) {  
+        System.out.println("Hello JavaTpoint");  
+    }  
+}
+
+
+6Q.
+List the Operators in java?
+Ans.
+Operator in Java is a symbol that is used to perform operations. For example: +, -, *, / etc.
+
+There are many types of operators in Java which are given below:
+
+Unary Operator,
+Arithmetic Operator,
+Shift Operator,
+Relational Operator,
+Bitwise Operator,
+Logical Operator,
+Ternary Operator and
+Assignment Operator.
+
+
+7Q.
+Explain about increment and decrement operators and give an examples.
+Ans.
+Increment and Decrement Operators in Java are used to increase or decrease the value by 1. For example, Incremental operator ++ is useful to increase the existing variable value by 1 (i = i + 1). Moreover, the decrement operator – – is useful to decrease or subtract the current value by 1 (i = i – 1). The syntax of both increment and decrement operators in Java Programming to prefix or postfix is
+
+Increment Operator : ++x or x++
+
+Decrement Operator: --x or x--
+
