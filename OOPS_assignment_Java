@@ -1,1 +1,105 @@
+1. What is Inheritance in Java?
+Ans: The technique of creating a new class by using an existing class functionality is called inheritance in Java.
+In other words, inheritance is a process where a child class acquires all the properties and behaviours of the
+parent class.
+
+
+2. What is superclass and subclass??
+Ans: A class from where a subclass inherits features is called superclass. It is also called base class or parent
+class.A class that inherits all the members (fields, method, and nested classes) from another class is called a
+subclass. It is also called a derived class, child class, or extended class.
+
+
+3. How is Inheritance implemented/achieved in Java?
+Ans: Inheritance can be implemented or achieved by using two keywords:
+extends: extends is a keyword that is used for developing the inheritance between two classes and two
+interfaces.implements: implements keyword is used for developing the inheritance between a class and interface.
+
+
+4. What is polymorphism?
+Ans: Polymorphism in OOP is the ability of an entity to take several forms. In other words, it refers to the ability of
+an object (or a reference to an object) to take different forms of objects. It allows a common data-gathering
+message to be sent to each class. Polymorphism encourages what is called ‘extendibility’ which means an
+object or a class can have its uses extended.
+
+
+5. Differentiate between method overloading and method overriding.
+Ans:Method Overloading is a Compile time polymorphism. In method overloading, more than one method shares the same method
+name with a different signature in the class. In method overloading, the return type can or can not be the same, but we have
+to change the parameter because, in java, we can not achieve the method overloading by changing only the return type of the method. 
+
+Method Overriding is a Run time polymorphism. In method overriding, the derived class provides the specific implementation of the
+method that is already provided by the base class or parent class. In method overriding, the return type must be the same or co-variant 
+(return type may vary in the same direction as the derived class). 
+
+
+
+
+6. What is an abstraction explained with an Example?
+Ans: Abstraction is nothing but the quality of dealing with ideas rather than events. It basically deals with hiding
+the internal details and showing the essential things to the user.
+Abstract class Sports { // abstract class sports
+Abstract void jump(); // abstract method
+}
+
+
+
+7. What is the difference between an abstract method and final method in Java?Explain with an example
+Ans: The abstract method is incomplete while the final method is regarded as complete. The only way to use
+an abstract method is by overriding it, but you cannot override a final method in Java.
+
+
+
+8. What is the final class in Java?
+Ans: A class declared with the final keyword is known as the final class. A final class can’t be inherited by
+subclasses. By using the final class, we can restrict the inheritance of the class. We can create a class as a final
+class only if it is complete in nature, which means it must not be an abstract class. In java, all the wrapper
+classes are final classes like String, Integer, etc.
+If we try to inherit a final class, then the compiler throws an error at compilation time. We can’t create a class as
+immutable without the final class.
+final class ParentClass
+{
+void showData()
+{
+System.out.println("This is a method of final Parent class");
+}
+}
+//It will throw compilation error
+class ChildClass extends ParentClass
+{
+void showData()
+{
+System.out.println("This is a method of Child class");
+}
+}
+class MainClass
+{
+public static void main(String arg[])
+{
+ParentClass obj = new ChildClass();
+obj.showData();
+}
+}
+
+
+
+9. Differentiate between abstraction and encapsulation.
+Ans:Abstraction  :
+It is a feature of OOPs. It is used to hide the unnecessary information or data from the user but shows the essential
+data that is useful for the user. It can be achieved by using the interface and the abstract class. In interfaces, only 
+the methods are exposed to the end-user.
+
+Encapsulation :
+It is also a feature of OOP. It is used to bind up the data into a single unit called class. It provides the mechanism which
+is known as data hiding. It is an important feature of OOPs. It prevents to access data members from the outside of the class. 
+It is also necessary from the security point of view.
+
+
+10. Difference between Runtime and compile time polymorphism explain with an example
+Ans:  Run time polymorphism :
+Runtime polymorphism or Dynamic Method Dispatch is a process in which a call to an overridden method is resolved at runtime rather than compile-time.
+
+Compile time polymorphism :
+Compile Time Polymorphism: Whenever an object is bound with its functionality at the compile time, this is known as the compile-time polymorphism.
+At compile-time, java knows which method to call by checking the method signatures. So this is called compile-time polymorphism or static or early binding.
 
