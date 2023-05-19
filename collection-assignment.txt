@@ -1,0 +1,55 @@
+1. What is the Collection framework in Java?
+Ans: Collection Framework is a combination of classes and interface, which is used to store and manipulate the
+data in the form of objects. It provides various classes such as ArrayList, Vector, Stack, and HashSet, etc. and
+interfaces such as List, Queue, Set, etc. for this purpose.
+
+
+2. What is the difference between ArrayList and LinkedList?
+Ans:
+ArrayList
+1) ArrayList internally uses a dynamic array to store the elements.
+2) Manipulation with ArrayList is slow because it internally uses an array. If any element is removed from the array, all the other elements are shifted in memory.
+3) An ArrayList class can act as a list only because it implements List only.
+4) ArrayList is better for storing and accessing data.
+
+LinkedList
+
+1)LinkedList internally uses a doubly linked list to store the elements.
+2)Manipulation with LinkedList is faster than ArrayList because it uses a doubly linked list, so no bit shifting is required in memory.
+3)LinkedList class can act as a list and queue both because it implements List and Deque interfaces.
+4)LinkedList is better for manipulating data.
+
+
+3. What is the difference between Iterator and ListIterator?
+Ans:
+Iterators are used in Collection framework in Java to retrieve elements one by one. It can be applied to any Collection object. By using Iterator, we can perform both read and remove operations. Iterator must be used whenever we want to enumerate elements in all Collection framework implemented interfaces like Set, List, Queue, Deque and also in all implemented classes of Map interface. Iterator is the only cursor available for entire collection framework. Iterator object can be created by calling iterator() method present in Collection interface.
+
+ListIterator It is only applicable for List collection implemented classes like arraylist, linkedlist etc. It provides bi-directional iteration. ListIterator must be used when we want to enumerate elements of List. This cursor has more functionality(methods) than iterator. ListIterator object can be created by calling listIterator() method present in List interface.
+
+
+4. What is the difference between Iterator and Enumeration?
+Ans:
+Iterator: It is a universal iterator as we can apply it to any Collection object. By using Iterator, we can perform both read and remove operations. It is an improved version of Enumeration with the additional functionality of remove-ability of an element. 
+
+Enumeration: Enumeration (or enum) is a user-defined data type. It is mainly used to assign names to integral constants, the names make a program easy to read and maintain.
+
+
+5. What is the difference between List and Set?
+Ans:
+The List interface allows storing the ordered collection. It is a child interface of Collection. It is an ordered collection of objects in which duplicate values are allowed to store. List preserves the insertion order, it allows positional access and insertion of elements.
+
+The set interface in the java.util package and extends Collection interface is an unordered collection of objects in which duplicate values cannot be stored. It is an interface that implements the maths set. This interface contains the methods inherited from the Collection interface and adds a feature that restricts to insert the duplicate elements. 
+
+
+6. What is the difference between HashSet and TreeSet?
+Ans: 
+HashSet is a generic class of the Java collection framework. It extends AbstractSet and implements the Set interface. It creates a collection that uses a hash table for storage. The hash table stores the information by using the hashing mechanism.
+
+TreeSet is a class of Java collection framework that extends AbstractSet and implements the Set, NavigableSet, and SortedSet interface. It creates a collection that uses a tree for storage.
+
+
+7. What is the difference between Array and ArrayList?
+Ans: 
+An array is a dynamically-created object. It serves as a container that holds the constant number of values of the same type. It has a contiguous memory location.
+
+ArrayList is internally backed by the array in Java. The resize operation in ArrayList slows down the performance as it involves new array and copying content from an old array to a new array.
