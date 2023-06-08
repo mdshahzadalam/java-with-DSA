@@ -1,0 +1,19 @@
+3.  What is the different between collections and stream? Explain with an Example.
+Ans. Collection is an in-memory data structure, which holds all the values that the data structure currently has. Every element in the Collection has to be computed before we add it to the Collection. Operations such as searching, sorting, insertion, manipulation, and deletion can be performed on a Collection. It provides many interfaces like (Set, List, Queue, Deque) and Classes like (ArrayList, Vector, LinkedList, PriorityQueue, HashSet).
+
+On the other hand, IStream is an API that is introduced in Java 8 which is used to process collections of objects. A stream is a sequence of objects that supports various methods which can be pipelined to produce the desired result. The Stream API is used to process collections of objects.
+
+4. What is enum in java? explain with an example.
+Ans. The Enum in Java is a data type which contains a fixed set of constants.
+
+It can be used for days of the week (SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, and SATURDAY) , directions (NORTH, SOUTH, EAST, and WEST), season (SPRING, SUMMER, WINTER, and AUTUMN or FALL), colors (RED, YELLOW, BLUE, GREEN, WHITE, and BLACK) etc. According to the Java naming conventions, we should have all constants in capital letters. So, we have enum constants in capital letters.
+
+5.What are in built annotations in java?
+Ans. Simply put, annotations are Java types that are preceded by an “@” symbol.
+Basically, an annotation assigns extra metadata to the source code it's bound to. By adding an annotation to a method, interface, class, or field, we can:
+@Override
+@SuppressWarnings
+@Deprecated
+@SafeVarargs
+@FunctionalInterface
+@Native
