@@ -1,0 +1,153 @@
+1Q.  Analyze the time complexity of the following java code and suggest a way to improve it:
+int sum=0;
+for(int i=0;i<=n;i++)
+{
+   for(int j=0;j<=i;j++)
+    {
+       sum++;
+     }
+}
+
+Ans.  Time complexity = O(n^2)
+
+2Q.  find the value of T(2) for the recurrence relation T(n)=3T(n-1) + 12n given that T(0)=5.
+Ans.   T(n)=3T(n-1) +12n
+          T(1)=3T(0) + 12n
+                 =3*5 + 12*1
+                 =15 + 12
+                 =27
+          T(2)=3T(2-1) + 12*2
+                 =3*27 + 24
+                 =81 + 24
+                  =105
+
+
+Question 3: Given a recurrence relation, solve it using a substitution method. Relation : T(n) = T(n - 1) + c.
+Solution: Let the solution be T(n) = O(n), now let’s prove this using the induction method.
+For that to happen T(n) <= cn where c is some constant.
+T(n) = T(n - 1) + c
+T(n - 1) = T(n - 2) + c
+T(n - 2) = T(n - 3) + c
+|
+|
+T(2) = T(1) + c
+—------------------------ Adding all above equations
+T(n) = T(1) + cn
+Let us assume T(1) to be a constant value.
+T(n) = k + cn
+Therefore, T(n) <= cn
+Hence we can conclude T(n) = O(n).
+
+Question 4: Given a recurrence relation:
+T(n) = 16T(n/4) + n2logn
+Find the time complexity of this relation using the master theorem.
+Solution: Fromthegivenrecurrencerelationwecanobtainthevalueofdifferentparameterssuchasa,b,p,and
+k.
+Therelation:T(n)=16T(n/4)+n2logn
+Here,a=16
+b=4
+k=2
+p=1
+bk=42=16
+Herea=bk
+Alsop>-1
+HenceT(n)=θ(nlogab*logp+1n)
+ThereforeT(n)=θ(nlog164*log1+1n)=θ(n1/2log2n)
+Question 5: Solve the following recurrence relation using recursion tree method
+T(n) = 2T(n/2) + n
+Solution :Thegivenrecurrencerelationshows-
+Aproblemofsi%enwillgetdividedinto2subproblemsofsi%en/2E
+$ Then,eachsub-problemofsi%en/2willbedividedinto2subproblemsofsi%en/4andsoonD
+$ Atthebottommostlayer,thesi%eofsub-problemswillreduceto1.
+Thisisillustratedthroughfollowingrecursiontree0
+
+Thegivenrecurrencerelationshows/
+$ Thecostofdividingaproblemofsi%enintoits2sub-problemsandthencombiningitssolutionisnD
+$ Thecostofdividingaproblemofsi%en/2intoits2sub-problemsandthencombiningitssolutionisn/2andso
+on.
+
+Thisisillustratedthroughfollowingrecursiontreewhereeachnoderepresentsthecostofthecorrespondingsub-
+problem
+
+Cracking the Coding Interview in JAVA - Foundation
+
+Assignment Solutions
+
+Step-02:
+De]ermiOe coR] of each levelT
+< CoR] of levelU0 = N
+< CoR] of levelU1 = O/2 + O/2 = N
+< CoR] of levelU2 = O/4 + O/4 + O/4 + O/4 = O aO= Ro oO.
+Step-03:
+De]ermiOe ]o]al Oumber of levelR iO ]he recurRioO ]reeT
+< Size of RubUproblem a] levelU0 = O/2\
+< Size of RubUproblem a] levelU1 = O/2;
+< Size of RubUproblem a] levelU2 = O/22
+CoO]iOuiOg iO Rimilar maOOer, we hava
+Size of RubUproblem a] levelUi = O/2i
+SuppoRe a] levelUx (laR] level), Rize of ]he RubUproblem becomeR 1. TheO O / 2x = 1
+2x = n
+TakiOg log oO bo]h Ri=eR(wi]h baRe 2), we get
+xlog2 = logn
+x = log2n
+∴
+To]al Oumber of levelR iO ]he recurRioO ]ree = log2O + 1 S]epU04:
+De]ermiOe Oumber of Oo=eR iO ]he laR] levelT
+< LevelU0 haR 20 Oo=eR i.e. 1 Oo=`
+< LevelU1 haR 21 Oo=eR i.e. 2 Oo=eQ
+< LevelU2 haR 22 Oo=eR i.e. 4 Oo=es
+CoO]iOuiOg iO Rimilar maOOer, we have LevelUlog2O haR 2log2O Oo=eR i.e. O Oo=es
+Step-05:
+De]ermiOe coR] of laR] level
+CoR] of laR] level = O x T(1) = θ(O)
+Step-06:
+A== coR]R of all ]he levelR of ]he recurRioO ]ree aO= Rimplify ]he expreRRioO Ro ob]aiOe= iO ]ermR of aRymp]o]ic
+Oo]a]ioOU
+.
+..
+
+Cracking the Coding Interview in JAVA - Foundation
+
+Assignment Solutions
+
+= n x log2n + θ (n)
+= nlog2n + θ (n)
+= θ (nlog2n)
+Question 6. T(n) = 2T(n/2) + K, Solve using Recurrence tree method.
+Step1. Drawing Recursion Tree
+
+@pw Team please redesign the image
+Step2. Calculating height of tree
+As we know that (n/2^k) =1
+n = 2^K
+Taking log both sides
+log(n) = log(2^k)
+log(n) = klog(2)
+k = log(n)/log(2)
+k = log2(n)
+Height of tree is log(n) base 2
+Step3. Calculate cost at each level
+Level 0 = K
+Level 1 = K + K = 2K
+Level 2 = K + K + K + K= 4K and so on...
+Step 4. Calculate number of nodes at each level
+Level 0 = 2^0 = 1
+Level 1 = 2^1 = 2
+Level 2 = 2^2 = 4 and so on...
+Step 5. Calculating final cost:
+The total cost can be written as,
+Total Cost = Cost of all levels except last level + Cost of last level
+Total Cost = Cost for level-0 + Cost for level-1 + Cost for level-2 + .... + Cost for level-log(n) + Cost for last level
+The cost of the last level is calculated separately because it is the base case and no merging is done at the last
+level so, the cost to solve a single problem at this level is some constant value. Let's take it as O(1)
+
+Cracking the Coding Interview in JAVA - Foundation
+
+Assignment Solutions
+Let's put the values into the formulae,
+T(n) = K + 2*K + 4*K + .... + log(n)` times + `O(1) * n
+T(n) = K(1 + 2 + 4 + .... + log(n) times)` + `O(n)
+T(n) = K(2^0 + 2^1 + 2^2 + ....+ log(n) times + O(n)
+In the GP formed above, a = 1 and r = 2, after solving this we get, T(n) = K * (1 / (2 - 1)) + O(n)
+T(n) = K + O(n)
+T(n) = O(n)
